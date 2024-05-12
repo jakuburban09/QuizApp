@@ -1,0 +1,136 @@
+{
+    "quizzes": [
+      {
+        "id": "dsfadf51651afd",
+        "name": "Adjectives",
+        "numberOfQuestions": 3,
+        "level": 2,
+        "language": "CZ",
+        "questions": [
+          {
+            "question": "announce",
+            "options": [
+              "zůstat, zůstat, setrvat",
+              "vyhrát, vyhrát, zvítězit",
+              "sloužit, obsluhovat, podávat",
+              "oznámit, oznámit, oznámit"
+            ],
+            "correctOption": "oznámit, oznámit, oznámit",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "live",
+            "options": [
+              "chtít, toužit, přát si",
+              "cítit, vnímat, pociťovat",
+              "nahlásit, nahlásit, hlásit",
+              "žít, žít, bydlet"
+            ],
+            "correctOption": "žít, žít, bydlet",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "hold",
+            "options": [
+              "stavět, postavit, vybudovat",
+              "stavět, postavit, vybudovat",
+              "držet, mít, držet",
+              "zvážit, uvážit, zvážit"
+            ],
+            "correctOption": "držet, mít, držet",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "go",
+            "options": [
+              "jít, pokračovat, chodit",
+              "dosáhnout, dosáhnout, dosáhnout",
+              "začít, začít, zahájit",
+              "žít, žít, bydlet"
+            ],
+            "correctOption": "jít, pokračovat, chodit",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "create",
+            "options": [
+              "sedět, posadit, zasednout",
+              "být, existovat, žít",
+              "dělat, provádět, realizovat",
+              "vytvořit, vytvořit, vytvořit"
+            ],
+            "correctOption": "vytvořit, vytvořit, vytvořit",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      },
+      {
+          "id": "854b6ds1fbvsd",
+          "name": "Colors",
+          "numberOfQuestions": 3,
+          "level": 2,
+          "language": "CZ",
+          "questions": [
+            {
+              "question": "red",
+              "options": [
+                "červená",
+                "modrá",
+                "zelená",
+                "žlutá"
+              ],
+              "correctOption": "červená",
+              "index": 0,
+              "isCorrect": null,
+              "isFilled": null,
+              "answer": ""
+            },
+            {
+              "question": "blue",
+              "options": [
+                "červená",
+                "modrá",
+                "zelená",
+                "žlutá"
+              ],
+              "correctOption": "modrá",
+              "index": 1,
+              "isCorrect": null,
+              "isFilled": null,
+              "answer": ""
+            },
+            {
+              "question": "green",
+              "options": [
+                "červená",
+                "modrá",
+                "zelená",
+                "žlutá"
+              ],
+              "correctOption": "zelená",
+              "index": 2,
+              "isCorrect": null,
+              "isFilled": null,
+              "answer": ""
+            }
+          ]
+        }
+        
+    ]
+  }
+  
