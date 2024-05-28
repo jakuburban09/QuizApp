@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "./Icon";
 import { Logo } from "../Logo";
-import { Menu } from "../Menu";
+import { MenuIcon } from "../MenuIcon";
 import Button, { IconPosition } from "./Button";
 import { Color } from "helpers/enums";
 
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
       </ul>
       {/* Hamburger or Close Icon */}
       <div className="md:hidden z-10" onClick={handleClick}>
-        {nav ? <Icon iconName="SignDoNotEnter" color="white" /> : <Menu />}
+        {nav ? <Icon iconName="SignDoNotEnter" color="white" /> : <MenuIcon />}
       </div>
       {/* Mobile Menu */}
       <ul

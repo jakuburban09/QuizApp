@@ -78,12 +78,14 @@ const QuizNavigation: FC<QuizNavigationProps> = ({
           {Array.from({ length: numberOfQuestions || 0 }, (_, index) => (
             <div
               key={index}
-              className={`${showAllQuestions ? "w-1/6 my-4 p-2" : ""}`}
+              className={`${
+                showAllQuestions ? "w-1/6 my-4 p-2 text-center" : ""
+              }`}
             >
               <RoundedIconButton
                 className={`${
                   isQuizEvaluated &&
-                  (questions[index].isCorrect ? "bg-green700" : "bg-red600")
+                  (questions[index].correct ? "bg-green700" : "bg-red600")
                 }`}
                 currentIndex={index}
                 onClickButton={() => handleButtonClick(index)}

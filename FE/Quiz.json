@@ -80,56 +80,40 @@
       ]
     },
     {
-        "id": "dsfadf51651afd",
-        "name": "Colors",
-        "numberOfQuestions": 3,
-        "level": 2,
-        "language": "CZ",
-        "questions": [
-          {
-            "question": "red",
-            "options": [
-              "červená",
-              "modrá",
-              "zelená",
-              "žlutá"
-            ],
-            "correctOption": "červená",
-            "index": 0,
-            "isCorrect": false,
-            "isFilled": false,
-            "answer": "červená"
-          },
-          {
-            "question": "blue",
-            "options": [
-              "červená",
-              "modrá",
-              "zelená",
-              "žlutá"
-            ],
-            "correctOption": "modrá",
-            "index": 1,
-            "isCorrect": false,
-            "isFilled": false,
-            "answer": "modrá"
-          },
-          {
-            "question": "green",
-            "options": [
-              "červená",
-              "modrá",
-              "zelená",
-              "žlutá"
-            ],
-            "correctOption": "zelená",
-            "index": 2,
-            "isCorrect": false,
-            "isFilled": false,
-            "answer": "zelená"
-          }
-        ]
-      }
-      
+      "id": "dsfadf51651afd",
+      "name": "Colors",
+      "numberOfQuestions": 3,
+      "level": 2,
+      "language": "CZ",
+      "questions": [
+        {
+          "question": "red",
+          "options": ["červená", "modrá", "zelená", "žlutá"],
+          "correctOption": "červená",
+          "index": 0,
+          "isCorrect": false,
+          "isFilled": false,
+          "answer": "červená"
+        },
+        {
+          "question": "blue",
+          "options": ["červená", "modrá", "zelená", "žlutá"],
+          "correctOption": "modrá",
+          "index": 1,
+          "isCorrect": false,
+          "isFilled": false,
+          "answer": "modrá"
+        },
+        {
+          "question": "green",
+          "options": ["červená", "modrá", "zelená", "žlutá"],
+          "correctOption": "zelená",
+          "index": 2,
+          "isCorrect": false,
+          "isFilled": false,
+          "answer": "zelená"
+        }
+      ]
+    }
   ]
 }

@@ -1,4 +1,4 @@
-export const Menu = () => (
+export const MenuIcon = () => (
   <svg
     width="48"
     height="48"

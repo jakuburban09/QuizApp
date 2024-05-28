@@ -8,7 +8,7 @@ interface Question {
   question: string;
   options: string[];
   correctOption: string;
-  isCorrect?: boolean;
+  correct?: boolean;
   answer?: string;
 }
 
@@ -81,7 +81,7 @@ const Summary: React.FC<SummaryProps> = ({
                       question={question.question}
                       correctAnswer={question.correctOption}
                       answer={question.answer || ""}
-                      isCorrect={question.isCorrect}
+                      isCorrect={question.correct}
                       numberOfQuestion={index + 1}
                       goToSlideNumber={
                         goToSlideNumber && (() => goToSlideNumber(index))

@@ -209,3 +209,23 @@ export const getColorClass = (color?: Color, isText?: boolean) => {
     return color ? ColorClassMap[color] : "";
   }
 };
+
+export type Question = {
+  question: string;
+  options: string[];
+  correctOption: string;
+  correct?: boolean;
+  answer?: string;
+};
+
+export type Quiz = {
+  id: string;
+  name: string;
+  numberOfQuestions: number;
+  level: number;
+  language: string;
+  questions: any;
+  correctAnswers: number;
+  incorrectAnswers: number;
+  score: number;
+};

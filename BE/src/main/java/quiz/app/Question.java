@@ -1,4 +1,3 @@
-// Question.java
 package quiz.app;
 
 import java.util.List;
@@ -21,6 +20,8 @@ public class Question {
         this.correctOption = correctOption;
         this.index = index;
     }
+
+    // Getters and setters for all fields
 
     public String getQuestion() {
         return question;

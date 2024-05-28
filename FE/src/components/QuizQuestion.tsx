@@ -9,7 +9,7 @@ interface QuizQuestionProps {
     options: string[];
     correctOption: string;
     index: number;
-    isCorrect?: boolean;
+    correct?: boolean;
     answer?: string;
   };
   answers: string[];
@@ -39,7 +39,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                 labelText={option}
                 isChecked={selectedOption === option}
                 onChange={() => onAnswerChange(question.index, option)}
-                isCorrect={question.isCorrect}
+                isCorrect={question.correct}
                 answer={question.correctOption === option}
                 isQuizEvaluated={isQuizEvaluated}
                 name={`question${question.index}`}

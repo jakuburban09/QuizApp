@@ -1,7 +1,5 @@
 package quiz.app;
 
-// InfoQuiz.java
-
 import java.util.List;
 
 public class InfoQuiz {
@@ -27,6 +25,8 @@ public class InfoQuiz {
         this.language = language;
         this.questions = questions;
     }
+
+    // Getters and setters for all fields including new fields
 
     public String getId() {
         return id;
