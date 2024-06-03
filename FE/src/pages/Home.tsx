@@ -10,12 +10,12 @@ import Navbar from "../components/bricks/Navbar";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="p-4">
+    <div className="p-4 container">
       <Navbar />
-      <Text element="h1" style="h1" className="mb-6">
+      <Text element="h1" style="h1" className="mb-6 w-full lg:w-1/2">
         Ultimate Quiz Companion!
       </Text>
-      <Text className="mb-10">
+      <Text className="mb-10 w-full lg:w-1/2">
         Unleash the power of knowledge with Wordz! Create and play custom
         quizzes effortlessly. Get ready for endless fun and learning adventures!
         Discover new topics and expand your mind with Wordz!

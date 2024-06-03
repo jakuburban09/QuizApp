@@ -129,8 +129,901 @@
               "answer": ""
             }
           ]
-        }
-        
+      },
+      {
+          "id": "car-parts",
+          "name": "Car Parts",
+          "numberOfQuestions": 10,
+          "level": 1,
+          "language": "EN",
+          "questions": [
+              {
+                  "question": "Which part of the car is responsible for driving the vehicle?",
+                  "options": [
+                      "Brakes",
+                      "Engine",
+                      "Wheels",
+                      "Lights"
+                  ],
+                  "correctOption": "Engine",
+                  "index": 0,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car is used to stop the vehicle?",
+                  "options": [
+                      "Clutch",
+                      "Steering Wheel",
+                      "Brakes",
+                      "Gear Shift"
+                  ],
+                  "correctOption": "Brakes",
+                  "index": 1,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "What is the main function of the radiator in a car?",
+                  "options": [
+                      "Cooling the engine",
+                      "Heating the cabin",
+                      "Cooling the fuel",
+                      "Cooling the brakes"
+                  ],
+                  "correctOption": "Cooling the engine",
+                  "index": 2,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car transmits the driver's movements to the wheels?",
+                  "options": [
+                      "Transmission",
+                      "Carburetor",
+                      "Alternator",
+                      "Exhaust"
+                  ],
+                  "correctOption": "Transmission",
+                  "index": 3,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car is responsible for generating electrical power for the vehicle?",
+                  "options": [
+                      "Starter",
+                      "Alternator",
+                      "Battery",
+                      "Lights"
+                  ],
+                  "correctOption": "Alternator",
+                  "index": 4,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car stores electrical energy?",
+                  "options": [
+                      "Alternator",
+                      "Battery",
+                      "Fuel Tank",
+                      "Ignition"
+                  ],
+                  "correctOption": "Battery",
+                  "index": 5,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car is used to control its speed?",
+                  "options": [
+                      "Gas Pedal",
+                      "Brake Pedal",
+                      "Clutch Pedal",
+                      "Steering Wheel"
+                  ],
+                  "correctOption": "Gas Pedal",
+                  "index": 6,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car allows you to change gears?",
+                  "options": [
+                      "Steering Wheel",
+                      "Gear Shift",
+                      "Handbrake",
+                      "Dashboard"
+                  ],
+                  "correctOption": "Gear Shift",
+                  "index": 7,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car is used to start the engine?",
+                  "options": [
+                      "Starter",
+                      "Battery",
+                      "Ignition Key",
+                      "Alternator"
+                  ],
+                  "correctOption": "Ignition Key",
+                  "index": 8,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              },
+              {
+                  "question": "Which part of the car provides visibility at night?",
+                  "options": [
+                      "Windshield",
+                      "Headlights",
+                      "Mirrors",
+                      "Dashboard"
+                  ],
+                  "correctOption": "Headlights",
+                  "index": 9,
+                  "isCorrect": null,
+                  "isFilled": null,
+                  "answer": ""
+              }
+          ]
+      },
+      {
+        "id": "financial-literacy",
+        "name": "Financial Literacy and Investing",
+        "numberOfQuestions": 10,
+        "level": 1,
+        "language": "EN",
+        "questions": [
+          {
+            "question": "What is the primary purpose of a budget?",
+            "options": [
+              "To increase spending",
+              "To track income and expenses",
+              "To reduce income",
+              "To eliminate debt"
+            ],
+            "correctOption": "To track income and expenses",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is an asset?",
+            "options": [
+              "A liability",
+              "An investment",
+              "Something you own that has value",
+              "A type of loan"
+            ],
+            "correctOption": "Something you own that has value",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What does ROI stand for in investing?",
+            "options": [
+              "Return on Investment",
+              "Rate of Interest",
+              "Return on Income",
+              "Risk of Investment"
+            ],
+            "correctOption": "Return on Investment",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which type of investment typically has the highest risk?",
+            "options": [
+              "Savings account",
+              "Bonds",
+              "Stocks",
+              "Certificates of deposit (CDs)"
+            ],
+            "correctOption": "Stocks",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the purpose of diversification in investing?",
+            "options": [
+              "To increase risk",
+              "To decrease costs",
+              "To spread risk across different investments",
+              "To maximize short-term gains"
+            ],
+            "correctOption": "To spread risk across different investments",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is compound interest?",
+            "options": [
+              "Interest on the initial principal only",
+              "Interest on the initial principal and the accumulated interest",
+              "Interest deducted from the principal",
+              "Interest that decreases over time"
+            ],
+            "correctOption": "Interest on the initial principal and the accumulated interest",
+            "index": 5,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is a mutual fund?",
+            "options": [
+              "A type of savings account",
+              "A pooled investment vehicle managed by a professional",
+              "A personal loan",
+              "An insurance policy"
+            ],
+            "correctOption": "A pooled investment vehicle managed by a professional",
+            "index": 6,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the main goal of retirement planning?",
+            "options": [
+              "To save for a house",
+              "To accumulate enough savings for retirement",
+              "To pay off student loans",
+              "To invest in stocks"
+            ],
+            "correctOption": "To accumulate enough savings for retirement",
+            "index": 7,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which financial statement shows a company's revenue and expenses?",
+            "options": [
+              "Balance sheet",
+              "Income statement",
+              "Cash flow statement",
+              "Statement of retained earnings"
+            ],
+            "correctOption": "Income statement",
+            "index": 8,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is a credit score?",
+            "options": [
+              "A measure of your creditworthiness",
+              "A measure of your income",
+              "A measure of your savings",
+              "A measure of your investment returns"
+            ],
+            "correctOption": "A measure of your creditworthiness",
+            "index": 9,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "id": "human-organs",
+        "name": "Human Body Organs",
+        "numberOfQuestions": 10,
+        "level": 1,
+        "language": "EN",
+        "questions": [
+          {
+            "question": "heart",
+            "options": [
+              "srdce",
+              "plíce",
+              "játra",
+              "ledviny"
+            ],
+            "correctOption": "srdce",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "lungs",
+            "options": [
+              "srdce",
+              "plíce",
+              "žaludek",
+              "mozek"
+            ],
+            "correctOption": "plíce",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "liver",
+            "options": [
+              "žaludek",
+              "játra",
+              "plíce",
+              "srdce"
+            ],
+            "correctOption": "játra",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "kidneys",
+            "options": [
+              "žaludek",
+              "mozek",
+              "ledviny",
+              "srdce"
+            ],
+            "correctOption": "ledviny",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "brain",
+            "options": [
+              "mozek",
+              "játra",
+              "ledviny",
+              "žaludek"
+            ],
+            "correctOption": "mozek",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "stomach",
+            "options": [
+              "ledviny",
+              "žaludek",
+              "plíce",
+              "játra"
+            ],
+            "correctOption": "žaludek",
+            "index": 5,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "intestines",
+            "options": [
+              "mozek",
+              "střeva",
+              "plíce",
+              "ledviny"
+            ],
+            "correctOption": "střeva",
+            "index": 6,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "pancreas",
+            "options": [
+              "slinivka",
+              "srdce",
+              "žaludek",
+              "játra"
+            ],
+            "correctOption": "slinivka",
+            "index": 7,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "bladder",
+            "options": [
+              "plíce",
+              "žaludek",
+              "mozek",
+              "močový měchýř"
+            ],
+            "correctOption": "močový měchýř",
+            "index": 8,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "spleen",
+            "options": [
+              "ledviny",
+              "slezina",
+              "srdce",
+              "střeva"
+            ],
+            "correctOption": "slezina",
+            "index": 9,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "id": "human-organs-functions",
+        "name": "Human Body Organs Functions",
+        "numberOfQuestions": 10,
+        "level": 1,
+        "language": "EN",
+        "questions": [
+          {
+            "question": "Which organ is responsible for pumping blood throughout the body?",
+            "options": [
+              "Heart",
+              "Lungs",
+              "Liver",
+              "Kidneys"
+            ],
+            "correctOption": "Heart",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ is responsible for exchanging oxygen and carbon dioxide?",
+            "options": [
+              "Heart",
+              "Lungs",
+              "Stomach",
+              "Brain"
+            ],
+            "correctOption": "Lungs",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ is responsible for detoxifying chemicals and metabolizing drugs?",
+            "options": [
+              "Stomach",
+              "Liver",
+              "Lungs",
+              "Heart"
+            ],
+            "correctOption": "Liver",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organs filter waste from the blood to form urine?",
+            "options": [
+              "Stomach",
+              "Brain",
+              "Kidneys",
+              "Heart"
+            ],
+            "correctOption": "Kidneys",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ controls the body's functions by sending signals through nerves?",
+            "options": [
+              "Brain",
+              "Liver",
+              "Kidneys",
+              "Stomach"
+            ],
+            "correctOption": "Brain",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ is responsible for digesting food and absorbing nutrients?",
+            "options": [
+              "Kidneys",
+              "Stomach",
+              "Lungs",
+              "Liver"
+            ],
+            "correctOption": "Stomach",
+            "index": 5,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ absorbs nutrients and water from food?",
+            "options": [
+              "Brain",
+              "Intestines",
+              "Lungs",
+              "Kidneys"
+            ],
+            "correctOption": "Intestines",
+            "index": 6,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ produces insulin and other important enzymes and hormones?",
+            "options": [
+              "Pancreas",
+              "Heart",
+              "Stomach",
+              "Liver"
+            ],
+            "correctOption": "Pancreas",
+            "index": 7,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ stores urine until it is excreted from the body?",
+            "options": [
+              "Lungs",
+              "Stomach",
+              "Brain",
+              "Bladder"
+            ],
+            "correctOption": "Bladder",
+            "index": 8,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which organ filters blood and helps fight infections?",
+            "options": [
+              "Kidneys",
+              "Spleen",
+              "Heart",
+              "Intestines"
+            ],
+            "correctOption": "Spleen",
+            "index": 9,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "id": "world-geography",
+        "name": "World Geography",
+        "numberOfQuestions": 10,
+        "level": 1,
+        "language": "EN",
+        "questions": [
+          {
+            "question": "What is the largest continent by land area?",
+            "options": [
+              "Africa",
+              "Asia",
+              "Europe",
+              "North America"
+            ],
+            "correctOption": "Asia",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which country has the largest population?",
+            "options": [
+              "India",
+              "United States",
+              "China",
+              "Indonesia"
+            ],
+            "correctOption": "China",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the capital city of Australia?",
+            "options": [
+              "Sydney",
+              "Melbourne",
+              "Canberra",
+              "Brisbane"
+            ],
+            "correctOption": "Canberra",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which river is the longest in the world?",
+            "options": [
+              "Nile",
+              "Amazon",
+              "Yangtze",
+              "Mississippi"
+            ],
+            "correctOption": "Nile",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which country is the smallest by land area?",
+            "options": [
+              "Monaco",
+              "San Marino",
+              "Vatican City",
+              "Liechtenstein"
+            ],
+            "correctOption": "Vatican City",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the largest desert in the world?",
+            "options": [
+              "Sahara",
+              "Arabian",
+              "Gobi",
+              "Antarctic"
+            ],
+            "correctOption": "Antarctic",
+            "index": 5,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the highest mountain in the world?",
+            "options": [
+              "K2",
+              "Kangchenjunga",
+              "Mount Everest",
+              "Lhotse"
+            ],
+            "correctOption": "Mount Everest",
+            "index": 6,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which ocean is the largest by surface area?",
+            "options": [
+              "Atlantic",
+              "Indian",
+              "Pacific",
+              "Southern"
+            ],
+            "correctOption": "Pacific",
+            "index": 7,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the capital city of Canada?",
+            "options": [
+              "Toronto",
+              "Vancouver",
+              "Ottawa",
+              "Montreal"
+            ],
+            "correctOption": "Ottawa",
+            "index": 8,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which country is known as the Land of the Rising Sun?",
+            "options": [
+              "China",
+              "Japan",
+              "South Korea",
+              "Thailand"
+            ],
+            "correctOption": "Japan",
+            "index": 9,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      },
+      {
+        "id": "europe-geography",
+        "name": "Europe Geography",
+        "numberOfQuestions": 10,
+        "level": 1,
+        "language": "EN",
+        "questions": [
+          {
+            "question": "What is the capital city of France?",
+            "options": [
+              "Paris",
+              "Lyon",
+              "Marseille",
+              "Nice"
+            ],
+            "correctOption": "Paris",
+            "index": 0,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which river flows through the city of Vienna?",
+            "options": [
+              "Seine",
+              "Rhine",
+              "Danube",
+              "Tiber"
+            ],
+            "correctOption": "Danube",
+            "index": 1,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the currency of Sweden?",
+            "options": [
+              "Euro",
+              "Krona",
+              "Pound",
+              "Franc"
+            ],
+            "correctOption": "Krona",
+            "index": 2,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which mountain range forms a natural border between Europe and Asia?",
+            "options": [
+              "Ural Mountains",
+              "Himalayas",
+              "Rocky Mountains",
+              "Andes"
+            ],
+            "correctOption": "Ural Mountains",
+            "index": 3,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the longest river in Europe?",
+            "options": [
+              "Volga",
+              "Rhine",
+              "Loire",
+              "Thames"
+            ],
+            "correctOption": "Volga",
+            "index": 4,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which country is known for its tulip fields and windmills?",
+            "options": [
+              "France",
+              "Germany",
+              "Netherlands",
+              "Italy"
+            ],
+            "correctOption": "Netherlands",
+            "index": 5,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the official language of Hungary?",
+            "options": [
+              "Hungarian",
+              "Slovak",
+              "Romanian",
+              "Czech"
+            ],
+            "correctOption": "Hungarian",
+            "index": 6,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "Which city is famous for its canals and gondolas?",
+            "options": [
+              "Venice",
+              "Barcelona",
+              "Berlin",
+              "Athens"
+            ],
+            "correctOption": "Venice",
+            "index": 7,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the smallest country in Europe by land area?",
+            "options": [
+              "Malta",
+              "Liechtenstein",
+              "Luxembourg",
+              "Andorra"
+            ],
+            "correctOption": "Vatican City",
+            "index": 8,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          },
+          {
+            "question": "What is the capital city of Greece?",
+            "options": [
+              "Athens",
+              "Santorini",
+              "Mykonos",
+              "Rhodes"
+            ],
+            "correctOption": "Athens",
+            "index": 9,
+            "isCorrect": null,
+            "isFilled": null,
+            "answer": ""
+          }
+        ]
+      }
     ]
   }
   
