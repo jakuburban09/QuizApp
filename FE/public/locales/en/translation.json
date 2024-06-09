@@ -1,0 +1,9 @@
+  {
+    "welcome": "Welcome to React",
+    "description": "This is a sample description.",
+    "createQuizPage": {
+        "heading": "Create your own quiz!",
+        "text": "Unleash the power of knowledge with Wordz! Create and play custom quizzes effortlessly. Get ready for endless fun and learning adventures!",
+        "createQuizButton": "Create Quiz"
+    }
+  }

@@ -1,7 +1,6 @@
+import { FC } from "react";
 import { Color, getColorClass } from "helpers/enums";
 import React from "react";
-import { FC } from "react";
-import { twMerge } from "tailwind-merge";
 
 type TextProps = {
   element?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";

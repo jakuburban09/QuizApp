@@ -19,22 +19,10 @@ const ControlButtons: React.FC<ControlButtonsProps> = ({
   isSummaryVisible,
   currentSlideIndex,
   numberOfQuestions,
-  evaluateQuiz,
   handleQuizNavigation,
 }) => {
   return (
     <div className="">
-      {/* { (isQuizEvaluatable && !isQuizEvaluated) && <Button
-                        className="w-full my-2"
-                        icon={{ iconName: "Check" }}
-                        color={Color.Green700}
-                        onClickButton={evaluateQuiz}
-                        disabled={
-                        isQuizEvaluated ? true : !isQuizEvaluatable ? true : false
-                        }
-                    >
-                        Evaluate
-                    </Button>} */}
       <div
         className={
           !isSummaryVisible

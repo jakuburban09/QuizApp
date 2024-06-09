@@ -1,0 +1,9 @@
+{
+  "welcome": "Vítejte v Reactu",
+  "description": "Toto je ukázkový popis.",
+  "createQuizPage": {
+    "heading": "Vytvoř si svůj vlastní kvíz!",
+    "text": "Uvolněte sílu vědomostí s Wordz! Vytvářejte a hrajte vlastní kvízy bez námahy. Připravte se na nekonečnou zábavu a dobrodružství při učení!",
+    "createQuizButton": "Vytvořit Kvíz"
+}
+}

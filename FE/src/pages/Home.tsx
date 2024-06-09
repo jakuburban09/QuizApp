@@ -7,6 +7,7 @@ import Card from "../components/bricks/Card";
 import Text from "../components/bricks/Text";
 import { Icon } from "../components/bricks/Icon";
 import Navbar from "../components/bricks/Navbar";
+import DynamicLink from "helpers/DynamicLink";
 
 const HomePage: React.FC = () => {
   return (
@@ -21,12 +22,17 @@ const HomePage: React.FC = () => {
         Discover new topics and expand your mind with Wordz!
       </Text>
       <div className="flex w-full justify-between gap-3 mb-14">
-        <Link to="/quiz" className="w-full">
+        {/* <DynamicLink to="quiz">
           <Button icon={{ iconName: "PlayFill" }} className="w-full">
             Start Quiz
           </Button>
-        </Link>
-        <Link to="/quiz" className="w-full">
+        </DynamicLink> */}
+        <DynamicLink to="quiz" className="w-full">
+      <Button icon={{ iconName: 'PlayFill' }} className="w-full">
+        Start Quiz
+      </Button>
+    </DynamicLink>
+        <DynamicLink to="createQuiz" className="w-full">
           <Button
             icon={{ iconName: "PlusLg" }}
             className="w-full"
@@ -34,7 +40,7 @@ const HomePage: React.FC = () => {
           >
             Create Quiz
           </Button>
-        </Link>
+        </DynamicLink>
       </div>
       <div className="w-full h-52 rounded-xl bg-purpleishWhiteOpacity flex justify-center align-middle items-center mb-14">
         <Icon iconName="PlayBtn" width={40} height={40} />

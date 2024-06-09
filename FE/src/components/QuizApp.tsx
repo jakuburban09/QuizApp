@@ -11,12 +11,8 @@ import "swiper/css/bundle";
 import QuizNavigation from "./QuizNavigation";
 import Button, { IconPosition } from "./bricks/Button";
 import { Color } from "helpers/enums";
-import { Link } from "react-router-dom";
 import Summary from "./Summary";
 import ControlButtons from "./ControlButtons";
-import QuizQuestions from "./QuizQuestions";
-import RadioButton from "./bricks/RadioButton";
-import Navbar from "./bricks/Navbar";
 import Text from "./bricks/Text";
 import Modal from "./bricks/Modal";
 import { useHistory } from "react-router-dom";
@@ -26,7 +22,7 @@ import { Question, Quiz } from "../helpers/enums";
 import QuizzesPage from "./QuizzesPage";
 
 const QuizApp: React.FC = () => {
-  const [numberOfQuestions, setNumberOfQuestions] = useState<string>("3"); // Defaultní hodnota
+  const [numberOfQuestions, setNumberOfQuestions] = useState<string>("");
 
   //BE CALLS
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
@@ -86,6 +82,7 @@ const QuizApp: React.FC = () => {
 
   const [isQuizEvaluated, setIsQuizEvaluated] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
 
   /* TODO - předělat */
   const handleAnswerChange = (questionIndex: number, value: string): void => {

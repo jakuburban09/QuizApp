@@ -5,6 +5,7 @@ import { Logo } from "../Logo";
 import { MenuIcon } from "../MenuIcon";
 import Button, { IconPosition } from "./Button";
 import { Color } from "helpers/enums";
+import i18n from "i18next";
 
 const Navbar: React.FC = () => {
   const [nav, setNav] = useState(false);
@@ -16,6 +17,10 @@ const Navbar: React.FC = () => {
     } else {
       document.body.style.overflow = "unset"; // Povolí scroll
     }
+  };
+
+  const changeLanguage = (lng:string) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -30,6 +35,8 @@ const Navbar: React.FC = () => {
         <Link to="/quiz">
           <li>Quiz</li>
         </Link>
+        <button onClick={() => changeLanguage('en')}>English</button>
+      <button onClick={() => changeLanguage('cs')}>Čeština</button>
       </ul>
       {/* Hamburger or Close Icon */}
       <div className="md:hidden z-10" onClick={handleClick}>
