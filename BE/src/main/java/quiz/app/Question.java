@@ -3,13 +3,12 @@ package quiz.app;
 import java.util.List;
 
 public class Question {
-
     private String question;
     private List<String> options;
     private String correctOption;
     private int index;
-    private boolean isCorrect;
     private String answer;
+    private boolean isCorrect;
 
     public Question() {
     }
@@ -20,8 +19,6 @@ public class Question {
         this.correctOption = correctOption;
         this.index = index;
     }
-
-    // Getters and setters for all fields
 
     public String getQuestion() {
         return question;

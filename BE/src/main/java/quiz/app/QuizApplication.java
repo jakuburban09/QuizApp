@@ -1,4 +1,3 @@
-//QuizServiceApplication.java
 package quiz.app;
 
 import org.springframework.boot.SpringApplication;

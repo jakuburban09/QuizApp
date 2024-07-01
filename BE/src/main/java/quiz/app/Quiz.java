@@ -1,31 +1,18 @@
 package quiz.app;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
-public class InfoQuiz {
-
+@Document(collection = "quizzes")
+public class Quiz {
+    @Id
     private String id;
     private String name;
     private int numberOfQuestions;
     private int level;
     private String language;
     private List<Question> questions;
-    private int correctAnswers;
-    private int incorrectAnswers;
-    private float score;
-
-    public InfoQuiz() {
-    }
-
-    public InfoQuiz(String id, String name, int numberOfQuestions, int level, String language, List<Question> questions) {
-        this.id = id;
-        this.name = name;
-        this.numberOfQuestions = numberOfQuestions;
-        this.level = level;
-        this.language = language;
-        this.questions = questions;
-    }
-
 
     public String getId() {
         return id;
@@ -73,29 +60,5 @@ public class InfoQuiz {
 
     public void setQuestions(List<Question> questions) {
         this.questions = questions;
-    }
-
-    public int getCorrectAnswers() {
-        return correctAnswers;
-    }
-
-    public void setCorrectAnswers(int correctAnswers) {
-        this.correctAnswers = correctAnswers;
-    }
-
-    public int getIncorrectAnswers() {
-        return incorrectAnswers;
-    }
-
-    public void setIncorrectAnswers(int incorrectAnswers) {
-        this.incorrectAnswers = incorrectAnswers;
-    }
-
-    public float getScore() {
-        return score;
-    }
-
-    public void setScore(float score) {
-        this.score = score;
     }
 }
