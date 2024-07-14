@@ -1,8 +1,8 @@
-package quiz.app;
+package quiz.app.dto;
 
 import java.util.List;
 
-public class Question {
+public class QuestionDTO {
     private String question;
     private List<String> options;
     private String correctOption;
@@ -10,10 +10,10 @@ public class Question {
     private String answer;
     private boolean isCorrect;
 
-    public Question() {
+    public QuestionDTO() {
     }
 
-    public Question(String question, List<String> options, String correctOption, int index) {
+    public QuestionDTO(String question, List<String> options, String correctOption, int index) {
         this.question = question;
         this.options = options;
         this.correctOption = correctOption;

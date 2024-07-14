@@ -1,23 +1,23 @@
-package quiz.app;
+package quiz.app.dto;
 
 import java.util.List;
 
-public class InfoQuiz {
+public class InfoQuizDTO {
 
     private String id;
     private String name;
     private int numberOfQuestions;
     private int level;
     private String language;
-    private List<Question> questions;
+    private List<QuestionDTO> questions;
     private int correctAnswers;
     private int incorrectAnswers;
     private float score;
 
-    public InfoQuiz() {
+    public InfoQuizDTO() {
     }
 
-    public InfoQuiz(String id, String name, int numberOfQuestions, int level, String language, List<Question> questions) {
+    public InfoQuizDTO(String id, String name, int numberOfQuestions, int level, String language, List<QuestionDTO> questions) {
         this.id = id;
         this.name = name;
         this.numberOfQuestions = numberOfQuestions;
@@ -67,11 +67,11 @@ public class InfoQuiz {
         this.language = language;
     }
 
-    public List<Question> getQuestions() {
+    public List<QuestionDTO> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<Question> questions) {
+    public void setQuestions(List<QuestionDTO> questions) {
         this.questions = questions;
     }
 

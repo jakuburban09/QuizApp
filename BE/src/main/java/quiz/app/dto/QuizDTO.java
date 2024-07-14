@@ -1,18 +1,18 @@
-package quiz.app;
+package quiz.app.dto;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
 @Document(collection = "quizzes")
-public class Quiz {
+public class QuizDTO {
     @Id
     private String id;
     private String name;
     private int numberOfQuestions;
     private int level;
     private String language;
-    private List<Question> questions;
+    private List<QuestionDTO> questions;
 
     public String getId() {
         return id;
@@ -54,11 +54,11 @@ public class Quiz {
         this.language = language;
     }
 
-    public List<Question> getQuestions() {
+    public List<QuestionDTO> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<Question> questions) {
+    public void setQuestions(List<QuestionDTO> questions) {
         this.questions = questions;
     }
 }

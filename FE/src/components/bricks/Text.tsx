@@ -16,7 +16,8 @@ type TextProps = {
     | "buttonMedium"
     | "buttonMediumBold"
     | "buttonMediumBoldStrikethrough"
-    | "buttonMediumStrikethrough";
+    | "buttonMediumStrikethrough"
+    | "buttonSmall";
   children: any;
   className?: string;
   color?: Color;
@@ -50,6 +51,7 @@ const Text: FC<TextProps> = ({
   const buttonMediumBold = `text-base leading-8 font-bold`;
   const buttonMediumBoldStrikethrough = `text-base leading-8 font-bold line-through`;
   const buttonMediumStrikethrough = `text-base leading-8 line-through`;
+  const buttonSmall = `text-sm leading-8`;
 
   let classes;
 
@@ -102,6 +104,10 @@ const Text: FC<TextProps> = ({
 
     case "buttonMediumStrikethrough":
       classes = [buttonMediumStrikethrough, className, usedColor].join(" ");
+      break;
+
+      case "buttonSmall":
+      classes = [buttonSmall, className, usedColor].join(" ");
       break;
 
     default:

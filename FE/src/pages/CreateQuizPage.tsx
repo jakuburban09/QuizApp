@@ -9,6 +9,9 @@ import Navbar from "../components/bricks/Navbar";
 import { useTranslation } from "react-i18next";
 import TextInput from "../components/bricks/TextInput";
 import TextInputWithRating from "../components/bricks/TextInputWithRating";
+import axios from "axios";
+import { useNotification } from "../components/NotificationContext"
+
 
 interface Question {
   question: string;
@@ -17,7 +20,9 @@ interface Question {
 }
 
 const CreateQuizPage: React.FC = () => {
+  const { addNotification } = useNotification();
   const { t } = useTranslation();
+  const [isCreateQuizFormVisible, setCreateQuizFormVisible] = useState(false);
 
   const [name, setName] = useState("");
   const [difficulty, setDifficulty] = useState(0);
@@ -40,7 +45,7 @@ const CreateQuizPage: React.FC = () => {
     setQuestions(updatedQuestions);
   };
 
-  const handleComplete = () => {
+  const handleComplete = async () => {
     const quiz = {
       id: Math.random().toString(36).substring(2, 15),
       name: name,
@@ -60,6 +65,15 @@ const CreateQuizPage: React.FC = () => {
       score: 0.0
     };
     console.log(quiz);
+
+    try {
+      const response = await axios.post('http://localhost:8080/createQuiz', quiz);
+      addNotification("Quiz created successfully", "Quiz is ready to be tested!", undefined, "success")
+      console.log('Quiz created successfully:', response.data);
+    } catch (error) {
+      addNotification("Error creating quiz", error, undefined, "error")
+      console.error('Error creating quiz:', error);
+    }
   };
 
   return (
@@ -74,11 +88,12 @@ const CreateQuizPage: React.FC = () => {
       <div className="w-full h-52 rounded-xl bg-purpleishWhiteOpacity flex justify-center align-middle items-center mb-14">
         <Icon iconName="PlayBtn" width={40} height={40} />
       </div>
-      <Button className="w-full" icon={{ iconName: "Plus" }}>
+      <Button className="w-full" icon={{ iconName: "Plus" }} onClickButton={() => setCreateQuizFormVisible(!isCreateQuizFormVisible)}>
         {t('createQuizPage.createQuizButton')}
       </Button>
 
-      {/* Formulář pro základní údaje kvízu */}
+      {isCreateQuizFormVisible && <div className="mt-4">
+        {/* Formulář pro základní údaje kvízu */}
       <div className="rounded-2xl px-4 py-5 bg-purpleishWhiteOpacity border-2 border-grayOpacity shadow-basic flex flex-col gap-3">
         <TextInput labelText="Name of quiz" placeholder="Colors..." value={name} onChange={(e) => setName(e.target.value)} />
         <TextInputWithRating labelText={"Select difficulty"} value={difficulty.toString()} onChange={(e) => setDifficulty(parseInt(e.target.value, 10))} />
@@ -109,6 +124,8 @@ const CreateQuizPage: React.FC = () => {
         <Button color={Color.PurpleDark} icon={{ iconName: "Flag" }} className="w-full justify-center" onClickButton={handleComplete}>Complete</Button>
         <Button color={Color.Purple} iconPosition={IconPosition.Right} icon={{ iconName: "PlusLg" }} className="w-full justify-center" onClickButton={handleAddQuestion}>Add</Button>
       </div>
+        </div>}
+      
     </div>
   );
 };

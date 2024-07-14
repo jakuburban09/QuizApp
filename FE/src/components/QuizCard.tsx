@@ -28,7 +28,7 @@ const QuizCard: FC<QuizCardType> = ({
         </Text>
         <Rating level={level} size={40} />
       </div>
-      <AnswerIndicator type="button" onClick={onClick} />
+      <AnswerIndicator type="button" onClick={onClick} backgroundColor={Color.Purple}/>
     </div>
   );
 };

@@ -35,6 +35,7 @@ flex gap-4 rounded-[16px]
       <AnswerIndicator
         numberOfQuestion={numberOfQuestion}
         isCorrect={isCorrect}
+        backgroundColor={isCorrect ? Color.Green700 : Color.Red600}
       />
       <div className={SummaryAnswerDicClasses}>
         <Text
@@ -61,7 +62,7 @@ flex gap-4 rounded-[16px]
       </div>
       <AnswerIndicator
         type="button"
-        onClick={() => goToSlideNumber && goToSlideNumber(numberOfQuestion - 1)} // Upraveno na goToSlideNumber
+        onClick={() => goToSlideNumber && goToSlideNumber(numberOfQuestion - 1)} backgroundColor={Color.Purple} // Upraveno na goToSlideNumber
       />
     </div>
   );

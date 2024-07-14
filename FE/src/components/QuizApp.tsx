@@ -1,11 +1,8 @@
 // QuizApp.tsx
-
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import QuizQuestion from "./QuizQuestion";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-/* import { Navigation } from 'swiper/modules'; */
 import "swiper/css";
 import "swiper/css/bundle";
 import QuizNavigation from "./QuizNavigation";
@@ -16,12 +13,13 @@ import ControlButtons from "./ControlButtons";
 import Text from "./bricks/Text";
 import Modal from "./bricks/Modal";
 import { useHistory } from "react-router-dom";
-/* import QuizBigNavigation from "./QuizBigNavigation"; */
-
 import { Question, Quiz } from "../helpers/enums";
 import QuizzesPage from "./QuizzesPage";
 
+import { useNotification } from "./NotificationContext";
+
 const QuizApp: React.FC = () => {
+  const { addNotification } = useNotification();
   const [numberOfQuestions, setNumberOfQuestions] = useState<string>("");
 
   //BE CALLS
@@ -60,6 +58,7 @@ const QuizApp: React.FC = () => {
       setQuizQuestions(response.data.questions);
       setStartQuiz(true);
     } catch (error) {
+      addNotification("Error fetching quiz details:", error, undefined, "error")
       console.error("Error fetching quiz details:", error);
     }
   };
@@ -76,7 +75,7 @@ const QuizApp: React.FC = () => {
     Array(
       !isNaN(parseInt(numberOfQuestions)) && numberOfQuestions.length !== 0
         ? parseInt(numberOfQuestions)
-        : 5,
+        : 0,
     ),
   );
 
@@ -126,6 +125,8 @@ const QuizApp: React.FC = () => {
     return result;
   };
 
+  console.log(answers)
+
   useEffect(() => {
     canBeQuizEvaluated(answers);
   }, [answers]);
@@ -167,10 +168,11 @@ const QuizApp: React.FC = () => {
         handleQuizNavigation(answers.length);
 
         // Volitelně můžete přidat kód pro obnovení kvízových otázek nebo přesměrování uživatele
+        addNotification("Quiz evaluated successfully", `Your score: ${score && score}`, undefined, "success")
         console.log("Quiz evaluated successfully:", evaluatedQuiz);
       } catch (error) {
+        addNotification("Error submitting quiz", error, undefined, "error")
         console.error("Error submitting quiz:", error);
-        window.alert("Failed to submit the quiz. Please try again.");
       }
     } else {
       window.alert(
@@ -200,6 +202,8 @@ const QuizApp: React.FC = () => {
 
   return (
     <div className="relative min-h-screen" style={{ minHeight: "100dvh" }}>
+  
+  <button onClick={() => addNotification("Test", "no")}>clic</button>
       {startQuiz ? (
         <div className="p-2">
           <div
@@ -242,9 +246,9 @@ const QuizApp: React.FC = () => {
           <Swiper
             className="!static"
             style={
-              currentSlideIndex === quizQuestions.length && !isQuizEvaluated
-                ? { height: "calc(100dvh - 72px - 48px - 230px)" }
-                : {}
+              currentSlideIndex === quizQuestions.length
+                ? isQuizEvaluated ? {  } : {height: "calc(100dvh - 72px - 48px - 230px)"}
+                : {height: "calc(100dvh - 72px - 230px)"}
             }
             spaceBetween={50}
             slidesPerView={1}
