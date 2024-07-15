@@ -15,6 +15,7 @@ import Modal from "./bricks/Modal";
 import { useHistory } from "react-router-dom";
 import { Question, Quiz } from "../helpers/enums";
 import QuizzesPage from "./QuizzesPage";
+import baseURL from "config";
 
 import { useNotification } from "./NotificationContext";
 
@@ -31,7 +32,7 @@ const QuizApp: React.FC = () => {
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/infoQuiz");
+        const response = await axios.get(`${baseURL}/infoQuiz`);
         setQuizzes(response.data);
         console.log("BE - ", response.data);
       } catch (err) {
@@ -47,7 +48,7 @@ const QuizApp: React.FC = () => {
   const handleQuizClick = async (quizId: string) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/quiz/${quizId}?randomizeQuiz=true`,
+        `${baseURL}/quiz/${quizId}?randomizeQuiz=true`,
       );
       console.log(response.data);
       const selectedQuiz = quizzes.find((quiz) => quiz.id === quizId);
@@ -154,7 +155,7 @@ const QuizApp: React.FC = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8080/submitQuiz",
+          `${baseURL}/submitQuiz`,
           quizData,
         );
         const evaluatedQuiz = response.data;
@@ -202,8 +203,6 @@ const QuizApp: React.FC = () => {
 
   return (
     <div className="relative min-h-screen" style={{ minHeight: "100dvh" }}>
-  
-  <button onClick={() => addNotification("Test", "no")}>clic</button>
       {startQuiz ? (
         <div className="p-2">
           <div

@@ -37,7 +37,7 @@ public class QuizController {
         this.getQuizService = getQuizService;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = {"http://localhost:3000", "http://192.168.1.11:3000"})
 
     @GetMapping("/quizzes")
     public List<QuizDTO> getAllQuizzes() {

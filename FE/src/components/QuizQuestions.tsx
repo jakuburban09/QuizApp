@@ -1,6 +1,5 @@
 import React from "react";
 import { SwiperSlide } from "swiper/react";
-import QuizQuestion from "./QuizQuestion";
 
 type QuizQuestionsProps = {
   questions: any;

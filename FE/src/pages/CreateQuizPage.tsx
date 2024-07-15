@@ -11,7 +11,7 @@ import TextInput from "../components/bricks/TextInput";
 import TextInputWithRating from "../components/bricks/TextInputWithRating";
 import axios from "axios";
 import { useNotification } from "../components/NotificationContext"
-
+import baseURL from "config";
 
 interface Question {
   question: string;
@@ -67,11 +67,11 @@ const CreateQuizPage: React.FC = () => {
     console.log(quiz);
 
     try {
-      const response = await axios.post('http://localhost:8080/createQuiz', quiz);
-      addNotification("Quiz created successfully", "Quiz is ready to be tested!", undefined, "success")
+      const response = await axios.post(`${baseURL}/createQuiz`, quiz);
+      addNotification("Quiz created successfully", "Quiz is ready to be tested!", undefined, "success");
       console.log('Quiz created successfully:', response.data);
     } catch (error) {
-      addNotification("Error creating quiz", error, undefined, "error")
+      addNotification("Error creating quiz", error, undefined, "error");
       console.error('Error creating quiz:', error);
     }
   };

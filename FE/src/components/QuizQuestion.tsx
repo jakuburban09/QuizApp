@@ -1,6 +1,5 @@
 // QuizQuestion.tsx
 import React, { useEffect } from "react";
-import QuizNavigation from "./QuizNavigation";
 import RadioButton from "./bricks/RadioButton";
 
 interface QuizQuestionProps {
