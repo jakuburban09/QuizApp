@@ -74,7 +74,9 @@ const QuizNavigation: FC<QuizNavigationProps> = ({
           )}
         </div>
 
-        <div className={`w-full flex flex-wrap justify-around`}> {/* ${numberOfQuestions % 6 == 0 ? "justify-around" : ""} */}
+        <div className={`w-full flex flex-wrap justify-around`}>
+          {" "}
+          {/* ${numberOfQuestions % 6 == 0 ? "justify-around" : ""} */}
           {Array.from({ length: numberOfQuestions || 0 }, (_, index) => (
             <div
               key={index}

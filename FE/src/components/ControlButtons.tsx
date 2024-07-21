@@ -4,8 +4,8 @@ import { Color } from "helpers/enums";
 import { IconPosition } from "./QuizNavigation";
 
 type ControlButtonsProps = {
-  isQuizEvaluated: boolean;
-  isQuizEvaluatable: boolean;
+  /* isQuizEvaluated: boolean;
+  isQuizEvaluatable: boolean; */
   currentSlideIndex: number;
   isSummaryVisible?: boolean;
   numberOfQuestions: number;
@@ -14,8 +14,8 @@ type ControlButtonsProps = {
 };
 
 const ControlButtons: React.FC<ControlButtonsProps> = ({
-  isQuizEvaluated,
-  isQuizEvaluatable,
+  /* isQuizEvaluated,
+  isQuizEvaluatable, */
   isSummaryVisible,
   currentSlideIndex,
   numberOfQuestions,
@@ -26,8 +26,8 @@ const ControlButtons: React.FC<ControlButtonsProps> = ({
       <div
         className={
           !isSummaryVisible
-            ? `flex justify-between gap-4 mb-2 absolute my-2 bottom-2 px-2`
-            : `flex justify-between gap-4 mb-2 my-2 bottom-2 px-2`
+            ? `flex justify-between gap-4 mb-2 absolute my-1 bottom-1 px-2`
+            : `flex justify-between gap-4 mb-2 my-1 bottom-1 px-2`
         }
         style={
           !isSummaryVisible ? { width: "calc(100% - 16px)" } : { width: "100%" }

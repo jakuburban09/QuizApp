@@ -59,7 +59,12 @@ const QuizApp: React.FC = () => {
       setQuizQuestions(response.data.questions);
       setStartQuiz(true);
     } catch (error) {
-      addNotification("Error fetching quiz details:", error, undefined, "error")
+      addNotification(
+        "Error fetching quiz details:",
+        error,
+        undefined,
+        "error",
+      );
       console.error("Error fetching quiz details:", error);
     }
   };
@@ -82,7 +87,6 @@ const QuizApp: React.FC = () => {
 
   const [isQuizEvaluated, setIsQuizEvaluated] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-
 
   /* TODO - předělat */
   const handleAnswerChange = (questionIndex: number, value: string): void => {
@@ -126,7 +130,7 @@ const QuizApp: React.FC = () => {
     return result;
   };
 
-  console.log(answers)
+  console.log(answers);
 
   useEffect(() => {
     canBeQuizEvaluated(answers);
@@ -154,10 +158,7 @@ const QuizApp: React.FC = () => {
       };
 
       try {
-        const response = await axios.post(
-          `${baseURL}/submitQuiz`,
-          quizData,
-        );
+        const response = await axios.post(`${baseURL}/submitQuiz`, quizData);
         const evaluatedQuiz = response.data;
 
         setQuizQuestions(evaluatedQuiz.questions);
@@ -169,10 +170,15 @@ const QuizApp: React.FC = () => {
         handleQuizNavigation(answers.length);
 
         // Volitelně můžete přidat kód pro obnovení kvízových otázek nebo přesměrování uživatele
-        addNotification("Quiz evaluated successfully", `Your score: ${score && score}`, undefined, "success")
+        addNotification(
+          "Quiz evaluated successfully",
+          `Your score: ${score && score}`,
+          undefined,
+          "success",
+        );
         console.log("Quiz evaluated successfully:", evaluatedQuiz);
       } catch (error) {
-        addNotification("Error submitting quiz", error, undefined, "error")
+        addNotification("Error submitting quiz", error, undefined, "error");
         console.error("Error submitting quiz:", error);
       }
     } else {
@@ -202,14 +208,17 @@ const QuizApp: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen" style={{ minHeight: "100dvh" }}>
+    <div
+      className="relative min-h-screen max-w-screen-xl mx-auto"
+      style={{ minHeight: "100dvh" }}
+    >
       {startQuiz ? (
         <div className="p-2">
           <div
             className={
               currentSlideIndex == parseInt(numberOfQuestions)
                 ? "flex justify-between px-4 py-3 items-center rounded-xl bg-purpleishWhiteOpacity nav shadow-basic mx-2"
-                : "hidden"
+                : "hidden md:flex md:justify-between md:px-4 md:py-3 md:items-center md:rounded-xl md:bg-purpleishWhiteOpacity md:nav md:shadow-basic md:mx-2"
             }
           >
             <Text style="h4">{quiz?.name}</Text>
@@ -218,8 +227,9 @@ const QuizApp: React.FC = () => {
               icon={{ iconName: "XLg" }}
               color={Color.Red600}
               onClickButton={() => setIsModalOpen(true)}
+              className="w-auto"
             >
-              Quit quiz
+              Quit
             </Button>
 
             {isModalOpen && (
@@ -246,9 +256,12 @@ const QuizApp: React.FC = () => {
             className="!static"
             style={
               currentSlideIndex === quizQuestions.length
-                ? isQuizEvaluated ? {  } : {height: "calc(100dvh - 72px - 48px - 230px)"}
-                : {height: "calc(100dvh - 72px - 230px)"}
+                ? isQuizEvaluated
+                  ? {}
+                  : { height: "calc(100dvh - 72px - 128px - 226px)" }
+                : { height: "calc(100dvh - 226px)" }
             }
+            allowTouchMove
             spaceBetween={50}
             slidesPerView={1}
             onSlideChange={(swiper) => handleSlideChange(swiper.activeIndex)}
@@ -293,8 +306,8 @@ const QuizApp: React.FC = () => {
           </Swiper>
           {/* TODO - nefunkční tlačítka - nefungují správně */}
           <ControlButtons
-            isQuizEvaluatable={isQuizEvaluatable}
-            isQuizEvaluated={isQuizEvaluated}
+            /* isQuizEvaluatable={isQuizEvaluatable} */
+            /* isQuizEvaluated={isQuizEvaluated} */
             currentSlideIndex={currentSlideIndex}
             isSummaryVisible={parseInt(numberOfQuestions) === currentSlideIndex}
             evaluateQuiz={evaluateQuiz}

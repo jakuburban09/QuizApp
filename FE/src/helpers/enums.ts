@@ -64,6 +64,7 @@ export enum Color {
   Red700 = "red700",
   Red800 = "red800",
   Red900 = "red900",
+  Transparent = "transparent",
 }
 
 export const ColorClassMap: Record<Color, string> = {
@@ -132,6 +133,7 @@ export const ColorClassMap: Record<Color, string> = {
   [Color.Red700]: "bg-red700 outline-red700",
   [Color.Red800]: "bg-red800 outline-red800",
   [Color.Red900]: "bg-red900 outline-red900",
+  [Color.Transparent]: "bg-transparent",
 };
 
 export const TextColorClassMap: Record<Color, string> = {
@@ -200,6 +202,7 @@ export const TextColorClassMap: Record<Color, string> = {
   [Color.Red700]: "text-red700",
   [Color.Red800]: "text-red800",
   [Color.Red900]: "text-red900",
+  [Color.Transparent]: "text-transparent",
 };
 
 export const getColorClass = (color?: Color, isText?: boolean) => {

@@ -1,9 +1,49 @@
 {
-  "welcome": "Vítejte v Reactu",
-  "description": "Toto je ukázkový popis.",
+  "homePage": {
+    "heading": "Ultimate Quiz Companion!",
+    "text": "Odemkněte sílu znalostí s Wordz! Vytvářejte a hrajte vlastní kvízy snadno a rychle. Připravte se na nekonečnou zábavu a vzdělávací dobrodružství! Objevujte nová témata a rozšiřujte své obzory s Wordz!"
+  },
+  "quizPage": {
+    "heading": "Vyber jeden nebo si vytvoř svůj vlastní!",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse quia dolorum exercitationem dignissimos, cumque earum pariatur distinctio praesentium, quidem illum reiciendis! Nesciunt aperiam fugiat laborum, laboriosam recusandae ad error?",
+    "secondHeading": "Naše kvízy"
+  },
   "createQuizPage": {
     "heading": "Vytvoř si svůj vlastní kvíz!",
     "text": "Uvolněte sílu vědomostí s Wordz! Vytvářejte a hrajte vlastní kvízy bez námahy. Připravte se na nekonečnou zábavu a dobrodružství při učení!",
     "createQuizButton": "Vytvořit Kvíz"
-}
+  },
+  "navbar": {
+    "home": "Domů",
+    "quizzes": "Kvízy",
+    "createQuiz": "Vytvořit kvíz"
+  },
+  "other": {
+    "buttons": {
+      "startQuiz": "Spustit kvíz",
+      "createQuiz": "Vytvoř kvíz",
+      "selectQuiz": "Vybrat kvíz"
+    },
+    "quizCard": {
+      "numberOfQuestions": "otázek"
+    },
+    "cards": {
+      "firstCard": {
+        "heading": "Nekonečné objevování slov:",
+        "text": "Objevujte neomezená slova s Wordz! Vyberte si nebo vytvořte kvízy přizpůsobené pro všechny milovníky slov. Vyzkoušejte sebe nebo své přátele a objevujte slova, o kterých jste nikdy nevěděli, že existují, a to vše při vzrušujícím učení."
+      },
+      "secondCard": {
+        "heading": "Snadné vytváření:",
+        "text": "Vytváření kvízů snadno! Wordz přináší rychlé, přizpůsobené výzvy. S naším intuitivním rozhraním je navrhování kvízů hračka, bez ohledu na vaše technické dovednosti. Ušetřete čas a užijte si plynulý zážitek z vytváření kvízů pokaždé."
+      },
+      "thirdCard": {
+        "heading": "Slovní potěšení:",
+        "text": "Wordz nabízí obohacující zábavu pro všechny! Prozkoumejte různé kvízy, které odpovídají různým zájmům a úrovním dovedností. Zúčastněte se přátelských soutěží, zlepšujte svou slovní zásobu a zdokonalujte své jazykové dovednosti zábavným způsobem."
+      },
+      "fourthCard": {
+        "heading": "Přizpůsobené učení:",
+        "text": "Přizpůsobte si svou cestu s Wordz! Vyberte si témata a úrovně pro přizpůsobený zážitek z kvízů. Ať už jste začátečník nebo odborník, Wordz se přizpůsobí vašim potřebám a vytváří personalizovaný vzdělávací zážitek, který odpovídá vašim cílům."
+      }
+    }
+  }
 }

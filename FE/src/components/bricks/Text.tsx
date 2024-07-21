@@ -106,7 +106,7 @@ const Text: FC<TextProps> = ({
       classes = [buttonMediumStrikethrough, className, usedColor].join(" ");
       break;
 
-      case "buttonSmall":
+    case "buttonSmall":
       classes = [buttonSmall, className, usedColor].join(" ");
       break;
 

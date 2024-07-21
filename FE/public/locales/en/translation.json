@@ -1,9 +1,51 @@
-  {
-    "welcome": "Welcome to React",
-    "description": "This is a sample description.",
-    "createQuizPage": {
-        "heading": "Create your own quiz!",
-        "text": "Unleash the power of knowledge with Wordz! Create and play custom quizzes effortlessly. Get ready for endless fun and learning adventures!",
-        "createQuizButton": "Create Quiz"
+{
+  "welcome": "Welcome to React",
+  "description": "This is a sample description.",
+  "homePage": {
+    "heading": "Ultimate Quiz Companion!",
+    "text": "Unleash the power of knowledge with Wordz! Create and play custom quizzes effortlessly. Get ready for endless fun and learning adventures! Discover new topics and expand your mind with Wordz!"
+  },
+  "quizPage": {
+    "heading": "Choose one or create your own!",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse quia dolorum exercitationem dignissimos, cumque earum pariatur distinctio praesentium, quidem illum reiciendis! Nesciunt aperiam fugiat laborum, laboriosam recusandae ad error?",
+    "secondHeading": "Our quizzes"
+  },
+  "createQuizPage": {
+    "heading": "Create your own quiz!",
+    "text": "Unleash the power of knowledge with Wordz! Create and play custom quizzes effortlessly. Get ready for endless fun and learning adventures!",
+    "createQuizButton": "Create Quiz"
+  },
+  "navbar": {
+    "home": "Home",
+    "quizzes": "Quizzes",
+    "createQuiz": "Create Quiz"
+  },
+  "other": {
+    "buttons": {
+      "startQuiz": "Start quiz",
+      "createQuiz": "Create quiz",
+      "selectQuiz": "Select quiz"
+    },
+    "quizCard": {
+      "numberOfQuestions": "questions"
+    },
+    "cards": {
+      "firstCard": {
+        "heading": "Endless Word Discovery:",
+        "text": "Discover limitless words with Wordz! Choose or create quizzes tailored for all word lovers. Challenge yourself or friends and uncover words you never knew existed, all while enjoying the thrill of learning."
+      },
+      "secondCard": {
+        "heading": "Effortless Creation:",
+        "text": "Creating quizzes made easy! Wordz delivers swift, tailored challenges. With our intuitive interface, designing quizzes is a breeze, no matter your tech skill level. Save time and enjoy a smooth quiz creation experience every time."
+      },
+      "thirdCard": {
+        "heading": "Wordy Delights:",
+        "text": "Wordz offers enriching fun for all! Explore a variety of quizzes catering to different interests and skill levels. Engage in friendly competitions, improve your vocabulary, and enhance your language skills in a fun way."
+      },
+      "fourthCard": {
+        "heading": "Custom Learning:",
+        "text": "Personalize your Wordz journey! Choose topics and levels for a customized quiz experience. Whether you're a beginner or an expert, Wordz adapts to your needs, creating a personalized educational experience that fits your goals."
+      }
     }
   }
+}

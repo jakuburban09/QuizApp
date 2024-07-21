@@ -4,6 +4,7 @@ import { Icon } from "./Icon";
 type RatingProps = {
   level: number;
   size?: number;
+  className?: string;
 };
 
 const defaultRatingProps: RatingProps = {
@@ -11,7 +12,7 @@ const defaultRatingProps: RatingProps = {
   size: 24,
 };
 
-const Rating: FC<RatingProps> = ({ level, size }) => {
+const Rating: FC<RatingProps> = ({ level, size, className }) => {
   let color;
   if (level === 1 || level === 2) {
     color = "#3F8509";
@@ -23,7 +24,7 @@ const Rating: FC<RatingProps> = ({ level, size }) => {
   }
 
   return (
-    <div className="flex gap-1">
+    <div className={`flex gap-1 ${className}`}>
       <Icon
         iconName={level === 1 ? "StarHalf" : "StarFill"}
         size={size}

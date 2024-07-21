@@ -3,6 +3,7 @@ import Text from "./bricks/Text";
 import { Color } from "helpers/enums";
 import AnswerIndicator from "./AnswerIndicator";
 import Rating from "./bricks/Rating";
+import { useTranslation } from "react-i18next";
 
 type QuizCardType = {
   nameOfQuiz: string;
@@ -17,6 +18,7 @@ const QuizCard: FC<QuizCardType> = ({
   level = 1,
   onClick,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="flex w-full p-4 justify-between rounded-xl bg-purpleishWhiteOpacity shadow-basic hover:bg-purple100">
       <div className="flex flex-col gap-2">
@@ -24,11 +26,16 @@ const QuizCard: FC<QuizCardType> = ({
           {nameOfQuiz}
         </Text>
         <Text element="h4" style="h5">
-          {numberOfQuestions.toString() + " questions"}
+          {numberOfQuestions.toString() +
+            ` ${t("other.quizCard.numberOfQuestions")}`}
         </Text>
         <Rating level={level} size={40} />
       </div>
-      <AnswerIndicator type="button" onClick={onClick} backgroundColor={Color.Purple}/>
+      <AnswerIndicator
+        type="button"
+        onClick={onClick}
+        backgroundColor={Color.Purple}
+      />
     </div>
   );
 };

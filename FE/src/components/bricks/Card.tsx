@@ -23,7 +23,7 @@ const Card: FC<CardProps> = ({ headline, text, color, className }) => {
           ? "from-blue700"
           : "from-green700"
   }`;
-  const CardClassesDefault = `p-3 bg-gradient-to-br to-black40Transparent rounded-xl text-purpleishWhite`;
+  const CardClassesDefault = `px-4 py-6 bg-gradient-to-br to-black40Transparent rounded-xl text-purpleishWhite`;
 
   const CardClasses = [
     CardClassesGradient,

@@ -71,6 +71,22 @@ module.exports = {
       red800: "#7D0D35",
       red900: "#670832",
     },
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       bg: {
         purpleishWhite: "#F3EFFE8C",
@@ -79,6 +95,9 @@ module.exports = {
         bg: "#F3EFFE8C",
         color: "#36174D",
         border: "66666652",
+      },
+      page: {
+        maxWidth: "",
       },
       boxShadow: {
         basic: "0px 0px 12px 0px rgba(0,0,0,0.2)",

@@ -24,10 +24,10 @@ const SummaryAnswer: React.FC<SummaryAnswerProps> = ({
 }) => {
   const SummaryAnswerClasses = `${
     isCorrect
-      ? "border border-2 border-green700 bg-green200"
+      ? "border border-2 border-green700 bg-green200 md:h-full"
       : "border border-2 border-red600 bg-red200"
   }
-flex gap-4 rounded-[16px]
+flex gap-4 rounded-[16px] md:h-[136px]
 `;
   const SummaryAnswerDicClasses = "text-left py-1 my-1 w-full";
   return (
@@ -62,7 +62,8 @@ flex gap-4 rounded-[16px]
       </div>
       <AnswerIndicator
         type="button"
-        onClick={() => goToSlideNumber && goToSlideNumber(numberOfQuestion - 1)} backgroundColor={Color.Purple} // Upraveno na goToSlideNumber
+        onClick={() => goToSlideNumber && goToSlideNumber(numberOfQuestion - 1)}
+        backgroundColor={Color.Purple} // Upraveno na goToSlideNumber
       />
     </div>
   );

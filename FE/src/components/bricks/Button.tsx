@@ -20,6 +20,7 @@ type ButtonProps = {
   hiearchy?: "primary" | "secondary" | "tertiaty";
   href?: string;
   rounded?: boolean;
+  type?: "submit" | "button" | "reset";
 };
 
 const defaultButtonProps: Partial<ButtonProps> = {
@@ -31,7 +32,7 @@ const defaultButtonProps: Partial<ButtonProps> = {
     console.log("Button clicked!");
   },
   hiearchy: "primary",
-  rounded: false
+  rounded: false,
 };
 
 const Button: FC<ButtonProps> = ({
@@ -44,7 +45,8 @@ const Button: FC<ButtonProps> = ({
   disabled,
   hiearchy,
   href,
-  rounded
+  rounded,
+  type,
 }) => {
   const getIconPositionClass = (position?: IconPosition) => {
     return position === IconPosition.Right ? "flex-row-reverse" : ""; // Adjust this based on your Tailwind CSS setup
@@ -52,7 +54,7 @@ const Button: FC<ButtonProps> = ({
 
   const buttonClass = `${
     hiearchy === "secondary" ? "px-5 py-[10px]" : "px-6 py-3"
-  } text-purpleishWhite font-medium flex gap-2 items-center transition duration-300 ease-in-out hover:brightness-90
+  } text-purpleishWhite font-medium flex gap-2 items-center transition duration-300 ease-in-out hover:brightness-90 w-full md:w-auto
      ${
        hiearchy === "secondary"
          ? "border border-2 border-purple bg-transparent text-purple"
@@ -65,7 +67,7 @@ const Button: FC<ButtonProps> = ({
 
   const isDisabled = disabled ? "brightness-50" : "brightness-100";
 
-  const isRounded = rounded ? "rounded-full p-4" : "rounded-[10px]"
+  const isRounded = rounded ? "rounded-full p-4" : "rounded-[10px]";
 
   const buttonClasses = [
     usedColor,
@@ -79,6 +81,7 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
+      type={type && type}
       className={twMerge(`
           ${buttonClasses}
         `)}

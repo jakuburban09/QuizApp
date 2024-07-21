@@ -71,7 +71,7 @@ const Summary: React.FC<SummaryProps> = ({
               </span>
             </Text>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 md:grid md:grid-cols-3 md:gap-4">
             {questions &&
               questions.map((question, index) => {
                 return (
@@ -93,9 +93,9 @@ const Summary: React.FC<SummaryProps> = ({
           </div>
         </div>
       ) : (
-        <div className="mx-2 h-full">
+        <div className="mx-2 h-full my-8">
           <Button
-            className="w-full"
+            className={`w-full ${isQuizEvaluatable ? "mb-[64px]" : ""}`}
             icon={{ iconName: "Check" }}
             color={Color.Green700}
             onClickButton={evaluateQuiz}
@@ -105,6 +105,16 @@ const Summary: React.FC<SummaryProps> = ({
           >
             Submit
           </Button>
+          {!isQuizEvaluatable && (
+            <Text
+              style="h4"
+              element="h5"
+              color={Color.Red600}
+              className="text-center mt-4"
+            >
+              You did not answered all questions!
+            </Text>
+          )}
         </div>
       )}
     </div>

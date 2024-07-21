@@ -1,12 +1,25 @@
-import React from 'react';
-import { Check, X, ExclamationTriangle, InfoCircle, ChevronRight } from "react-bootstrap-icons";
+import React from "react";
+import {
+  Check,
+  X,
+  ExclamationTriangle,
+  InfoCircle,
+  ChevronRight,
+} from "react-bootstrap-icons";
 import { Icon, IconProps } from "./bricks/Icon";
-import { Color, getColorClass } from 'helpers/enums';
+import { Color, getColorClass } from "helpers/enums";
 
 type AnswerIndicatorProps = {
   numberOfQuestion?: number;
   isCorrect?: boolean | undefined;
-  type?: "indicator" | "button" | "success" | "error" | "warning" | "info" | undefined;
+  type?:
+    | "indicator"
+    | "button"
+    | "success"
+    | "error"
+    | "warning"
+    | "info"
+    | undefined;
   backgroundColor?: Color;
   height?: number;
   width?: number;
@@ -27,7 +40,7 @@ const AnswerIndicator: React.FC<AnswerIndicatorProps> = ({
   width,
   onClick,
 }) => {
-  let iconName: IconProps['iconName'];
+  let iconName: IconProps["iconName"];
 
   switch (type) {
     case "indicator":
@@ -46,14 +59,14 @@ const AnswerIndicator: React.FC<AnswerIndicatorProps> = ({
       iconName = "InfoCircle";
       break;
     case "button":
-        iconName = "ChevronRight";
-        break;
-        default:
+      iconName = "ChevronRight";
+      break;
+    default:
       iconName = "ChevronRight";
       break;
   }
 
-  const usedColor = getColorClass(backgroundColor)
+  const usedColor = getColorClass(backgroundColor);
 
   const AnswerIndicatorClasses = `flex flex-col outline outline-2 justify-center gap-4 p-3 rounded-[12px] align-middle items-center h-[${height}px] !w-[${width}px]`;
 
@@ -67,11 +80,7 @@ const AnswerIndicator: React.FC<AnswerIndicatorProps> = ({
       : "text-purple p-[4px]"
   } bg-purpleishWhite rounded-full`;
 
-  const buttonClasses = [
-    usedColor,
-    AnswerIndicatorClasses
-    
-  ].join(" ");
+  const buttonClasses = [usedColor, AnswerIndicatorClasses].join(" ");
 
   return (
     <div
