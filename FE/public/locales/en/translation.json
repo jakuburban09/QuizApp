@@ -18,7 +18,9 @@
   "navbar": {
     "home": "Home",
     "quizzes": "Quizzes",
-    "createQuiz": "Create Quiz"
+    "createQuiz": "Create Quiz",
+    "login": "Login",
+    "register": "Register"
   },
   "other": {
     "buttons": {

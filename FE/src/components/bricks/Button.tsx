@@ -29,7 +29,6 @@ const defaultButtonProps: Partial<ButtonProps> = {
   children: "Button text",
   color: Color.Purple,
   onClickButton: () => {
-    console.log("Button clicked!");
   },
   hiearchy: "primary",
   rounded: false,

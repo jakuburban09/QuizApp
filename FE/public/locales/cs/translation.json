@@ -16,7 +16,9 @@
   "navbar": {
     "home": "Domů",
     "quizzes": "Kvízy",
-    "createQuiz": "Vytvořit kvíz"
+    "createQuiz": "Vytvořit kvíz",
+    "login": "Přihlášení",
+    "register": "Registrace"
   },
   "other": {
     "buttons": {

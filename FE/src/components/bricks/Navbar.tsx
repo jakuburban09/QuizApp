@@ -56,6 +56,12 @@ const Navbar: React.FC = () => {
         <Link to={generateLink("/createQuiz")}>
           <li>{t("navbar.createQuiz")}</li>
         </Link>
+        <Link to={generateLink("/login")}>
+          <li>{t("navbar.login")}</li>
+        </Link>
+        <Link to={generateLink("/register")}>
+          <li>{t("navbar.register")}</li>
+        </Link>
         {currentLanguage === "en" ? (
           <Button
             onClickButton={() => changeLanguage("cs")}
@@ -172,6 +178,12 @@ const Navbar: React.FC = () => {
           <Link to={generateLink("/createQuiz")}>
             <li>{t("navbar.createQuiz")}</li>
           </Link>
+          <Link to={generateLink("/login")}>
+          <li>{t("navbar.login")}</li>
+        </Link>
+        <Link to={generateLink("/register")}>
+          <li>{t("navbar.register")}</li>
+        </Link>
         </div>
       </ul>
     </nav>

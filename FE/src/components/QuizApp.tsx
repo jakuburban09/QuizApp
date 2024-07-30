@@ -130,8 +130,6 @@ const QuizApp: React.FC = () => {
     return result;
   };
 
-  console.log(answers);
-
   useEffect(() => {
     canBeQuizEvaluated(answers);
   }, [answers]);
@@ -198,12 +196,12 @@ const QuizApp: React.FC = () => {
   };
 
   const handleReject = () => {
-    console.log("Rejected");
+
     setIsModalOpen(false);
   };
 
   const handleClose = () => {
-    console.log("Closed");
+
     setIsModalOpen(false);
   };
 
