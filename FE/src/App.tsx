@@ -3,6 +3,8 @@ import React from "react";
 import i18n from "i18next";
 import AppRouter from "pages/AppRouter";
 import { NotificationProvider } from "./components/NotificationContext";
+import configureAxios from "./axiosConfig"; // Importujte konfigurační funkci
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       style={{ backgroundImage: 'url("/images/background.svg")' }}
     >
       <NotificationProvider>
-        <AppRouter />
+        <AppRouter  />
       </NotificationProvider>
     </div>
   );

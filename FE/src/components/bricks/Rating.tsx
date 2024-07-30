@@ -18,7 +18,6 @@ const Rating: FC<RatingProps> = ({ level, size, className }) => {
     color = "#3F8509";
   } else if (level === 3 || level === 4) {
     color = "#B15D03";
-    console.log(color);
   } else if (level === 5 || level === 6) {
     color = "#B91F39";
   }

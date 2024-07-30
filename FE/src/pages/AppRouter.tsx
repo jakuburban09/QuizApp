@@ -1,37 +1,20 @@
+// src/pages/AppRouter.js
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-  RouteComponentProps,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import HomePage from "./Home";
 import QuizApp from "../components/QuizApp";
 import CreateQuizPage from "./CreateQuizPage";
-import { useTranslation } from "react-i18next";
 import Register from "../components/Register";
 import Login from "../components/Login";
+import PrivateRoute from "./PrivateRoute"; // Importujte PrivateRoute
 
-const AppRouter: React.FC = () => {
+const AppRouter = () => {
   return (
     <Router>
       <Switch>
-        <Route
-          path="/:lng/createQuiz"
-          render={(props) => (
-            <PageWrapper Component={CreateQuizPage} {...props} />
-          )}
-        />
-        <Route
-          path="/:lng/quiz"
-          render={(props) => <PageWrapper Component={QuizApp} {...props} />}
-        />
-        <Route
-          path="/:lng"
-          exact
-          render={(props) => <PageWrapper Component={HomePage} {...props} />}
-        />
+        <PrivateRoute path="/:lng/createQuiz" component={CreateQuizPage} />
+        <Route path="/:lng/quiz" component={QuizApp} />
+        <Route path="/:lng" exact component={HomePage} />
         <Route path="/:lng/register" component={Register} />
         <Route path="/:lng/login" component={Login} />
         <Route path="/" exact>
@@ -40,23 +23,6 @@ const AppRouter: React.FC = () => {
       </Switch>
     </Router>
   );
-};
-
-interface PageWrapperProps extends RouteComponentProps<{ lng: string }> {
-  Component: React.FC;
-}
-
-const PageWrapper: React.FC<PageWrapperProps> = ({ Component, match }) => {
-  const { lng } = match.params;
-  const { i18n } = useTranslation();
-
-  React.useEffect(() => {
-    if (i18n.language !== lng) {
-      i18n.changeLanguage(lng);
-    }
-  }, [lng, i18n]);
-
-  return <Component />;
 };
 
 export default AppRouter;

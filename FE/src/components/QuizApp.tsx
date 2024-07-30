@@ -130,7 +130,6 @@ const QuizApp: React.FC = () => {
     return result;
   };
 
-  console.log(answers);
 
   useEffect(() => {
     canBeQuizEvaluated(answers);

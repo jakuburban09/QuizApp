@@ -73,6 +73,12 @@ const Navbar: React.FC = () => {
             <ReactCountryFlag countryCode="US" />
           </Button>
         )}
+        <Link to={generateLink("/login")}>
+          <li>{t("navbar.login")}</li>
+        </Link>
+        <Link to={generateLink("/register")}>
+          <li>{t("navbar.register")}</li>
+        </Link>
       </ul>
       {/* Hamburger or Close Icon */}
       <div className="md:hidden z-10">
@@ -172,6 +178,12 @@ const Navbar: React.FC = () => {
           <Link to={generateLink("/createQuiz")}>
             <li>{t("navbar.createQuiz")}</li>
           </Link>
+          <Link to={generateLink("/login")}>
+          <li>{t("navbar.login")}</li>
+        </Link>
+        <Link to={generateLink("/register")}>
+          <li>{t("navbar.register")}</li>
+        </Link>
         </div>
       </ul>
     </nav>
