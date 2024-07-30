@@ -1,4 +1,4 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://127.0.0.1:27017/QuizApp
+      uri: mongodb+srv://jakuburban09:passwordToDb546@ju-test.dqmpvcz.mongodb.net/QuizApp?retryWrites=true&w=majority&appName=JU-TEST
